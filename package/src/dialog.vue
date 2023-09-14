@@ -1,6 +1,6 @@
 <template>
   <div>
-
+    hello use dialog
   </div>
 </template>
 
