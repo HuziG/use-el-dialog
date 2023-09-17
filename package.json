@@ -19,5 +19,8 @@
     "vite": "^4.4.9",
     "vite-plugin-dts": "^3.5.3",
     "vue": "^3.3.4"
+  },
+  "dependencies": {
+    "element-plus": "^2.3.14"
   }
 }
