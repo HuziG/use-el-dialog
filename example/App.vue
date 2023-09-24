@@ -2,15 +2,21 @@
   <div>
     <el-button @click="handleOpenDialog">Open</el-button>
 
-    <basic-modal @register="useRegister"></basic-modal>
+    <basic-dialog @register="useRegister">
+      <Form />
+    </basic-dialog>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { useElDialog } from '../package/src/hooks/useElDialog'
 
+import Form from './components/Form.vue'
+
 const [useRegister, useMethods] = useElDialog({
-  title: 'new Use El Dialog',
+  title: 'Title can custom',
+  reload: true,
+  subBtuText: 'Submit',
 })
 
 const handleOpenDialog = () => {

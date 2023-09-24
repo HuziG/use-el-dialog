@@ -1,13 +1,18 @@
 <template>
   <el-dialog id="basic-modal" v-bind="getBindValue" v-model="isModal" @close="onCloseModal">
     <template #header>
-      <slot></slot>
+      <slot name="#header"></slot>
       <!-- <div class="w-full cursor-move" id="basic-modal-bar">{{ getBindValue.title }}</div> -->
     </template>
     <template #default>
-      <slot name="default"></slot>
+      <template v-if="reload">
+        <slot name="default" v-if="isModal"></slot>
+      </template>
+      <template v-else>
+        <slot name="default"></slot>
+      </template> 
     </template>
-    <template #action v-if="!$slots.action">
+    <template #footer v-if="!$slots.footer">
       <span class="dialog-footer">
         <el-button @click="closeModal">Cancel</el-button>
         <el-button type="primary" :loading="subLoading" @click="handleSubmit">
@@ -15,8 +20,8 @@
         </el-button>
       </span>
     </template>
-    <template v-else #action>
-      <slot name="action"></slot>
+    <template v-else #footer>
+      <slot name="footer"></slot>
     </template>
   </el-dialog>
 </template>
@@ -47,6 +52,11 @@
   const subBtuText = computed(() => {
     const { subBtuText } = propsRef.value as any;
     return subBtuText || props.subBtuText;
+  });
+
+  const reload = computed(() => {
+    const { reload } = propsRef.value as any;
+    return reload || props.reload;
   });
 
   async function setProps(modalProps: Partial<NewDialogProps>): Promise<void> {

@@ -26,4 +26,5 @@ export type NewDialogProps = DialogProps & {
   subBtuText?: string;
   width?: number;
   title?: string;
+  reload?: boolean;
 }
