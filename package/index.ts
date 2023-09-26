@@ -1,5 +1,6 @@
 // filename: packages/index.ts
 import Dialog from './src'
+import { useElDialog } from './src/hooks/useElDialog'
 
 const components = [Dialog]
 
@@ -14,4 +15,5 @@ const install = function (Vue: any) {
 export default {
   // 导出的对象必须具有 install，才能被 Vue.use() 方法安装
   install,
+  useElDialog
 }
