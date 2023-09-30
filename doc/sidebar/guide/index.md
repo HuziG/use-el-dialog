@@ -1,7 +1,3 @@
-<script setup>
-  import Dialog from './dialog.vue'
-</script>
-
 # Getting started
 
 use-el-dialog is library, help you to use el-dialog from element-plus, easy and simple to use el-dialog by hook type.
@@ -68,3 +64,5 @@ const [registerDialog, dialogMethods] = useElDialog({
 })
 </script>
 ```
+
+<BasicUse />
