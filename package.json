@@ -7,13 +7,14 @@
   "types": "dist/package/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/floating-vue.umd.js",
-      "import": "./dist/floating-vue.mjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/use-el-dialog.umd.js",
+      "import": "./dist/use-el-dialog.mjs",
+      "types": "./dist/package/index.d.ts"
     }
   },
   "files": [
-    "dist", "*.mjs"
+    "dist",
+    "*.mjs"
   ],
   "typings": "dist/lib/main.d.ts",
   "scripts": {
@@ -30,9 +31,5 @@
     "vite": "^4.4.9",
     "vite-plugin-dts": "^3.5.3",
     "vue": "^3.3.4"
-  },
-  "dependencies": {
-    "element-plus": "^2.3.14",
-    "use-el-dialog": "^0.0.5"
   }
 }
