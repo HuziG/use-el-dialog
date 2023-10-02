@@ -20,16 +20,31 @@
   "scripts": {
     "dev": "vite --force --host",
     "build": "npx vite build && npx tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "search-insights"
+      ]
+    }
+  },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.3.4",
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
     "vite-plugin-dts": "^3.5.3",
+    "vitepress": "1.0.0-rc.20",
     "vue": "^3.3.4"
+  },
+  "dependencies": {
+    "element-plus": "^2.3.14"
   }
 }
