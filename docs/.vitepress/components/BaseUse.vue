@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <el-button @click="handleOpen">Open Dialog</el-button>
+  <div class="box-container">
+    <el-button size="large" @click="handleOpen">Open Dialog</el-button>
 
     <basic-dialog @register="registerDialog" />
   </div>
@@ -10,7 +10,7 @@
 import { useElDialog } from 'use-el-dialog'
 
 const [registerDialog, dialogMethods] = useElDialog({
-  title: 'Title'
+  title: 'Custom Title'
 })
 
 const handleOpen = () => {
