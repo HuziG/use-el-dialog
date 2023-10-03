@@ -24,6 +24,7 @@ export type UseModalReturnType = [RegisterFn, ModalMethods];
 
 export type NewDialogProps = DialogProps & {
   subBtuText?: string;
+  cancelBtuText?: string;
   width?: number;
   title?: string;
   reload?: boolean;

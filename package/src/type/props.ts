@@ -7,6 +7,10 @@ export const basicProps = {
     type: String,
     default: 'Confirm',
   },
+  cancelBtuText: {
+    type: String,
+    default: 'Cancel',
+  },
   width: {
     type: Number,
     default: 446,

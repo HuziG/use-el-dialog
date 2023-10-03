@@ -1,7 +1,7 @@
 <template>
   <el-dialog id="basic-modal" v-bind="getBindValue" v-model="isModal" @close="onCloseModal">
     <template #header>
-      <slot name="#header"></slot>
+      <slot name="header"></slot>
       <!-- <div class="w-full cursor-move" id="basic-modal-bar">{{ getBindValue.title }}</div> -->
     </template>
     <template #default>
@@ -14,7 +14,7 @@
     </template>
     <template #footer v-if="!$slots.footer">
       <span class="dialog-footer">
-        <el-button @click="closeModal">Cancel</el-button>
+        <el-button @click="closeModal">{{ cancelBtuText }}</el-button>
         <el-button type="primary" :loading="subLoading" @click="handleSubmit">
           {{ subBtuText }}
         </el-button>
@@ -54,6 +54,11 @@
     return subBtuText || props.subBtuText;
   });
 
+  const cancelBtuText = computed(() => { 
+    const { cancelBtuText } = propsRef.value as any;
+    return cancelBtuText || props.cancelBtuText;
+  })
+
   const reload = computed(() => {
     const { reload } = propsRef.value as any;
     return reload || props.reload;
@@ -82,7 +87,6 @@
   function closeModal() {
     isModal.value = false;
     subLoading.value = false;
-    emit('on-close');
   }
 
   function onCloseModal() {
