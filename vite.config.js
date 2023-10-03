@@ -6,6 +6,11 @@ import dts from 'vite-plugin-dts'
 
 export default defineConfig({
   plugins: [vue(), dts()],
+  resolve: {
+    alias: {
+      'use-el-dialog': resolve(__dirname, './package/index.ts'),
+    },
+  },
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points
