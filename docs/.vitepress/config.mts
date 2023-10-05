@@ -12,6 +12,9 @@ export default defineConfig({
       }
     }
   },
+  head: [
+    ['link', { href: '/logo.webp', rel: 'icon', type: 'image/webp' }],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -37,7 +40,11 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+      { icon: 'github', link: 'https://github.com/HuziG/use-el-dialog' }
+    ],
+
+    footer: {
+			message: 'Released under the MIT License. thanks for naive-ui-admin.',
+		},
   }
 })

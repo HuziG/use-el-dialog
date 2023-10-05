@@ -8,3 +8,9 @@
   align-items: center;
   justify-content: center;
 }
+
+:root {
+  --vp-c-indigo-1: hsl(210 100% 62%);
+  --vp-c-indigo-2: hsl(210 100% 70%);
+  --vp-c-indigo-3: hsl(210 100% 57%);
+}
