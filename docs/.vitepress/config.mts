@@ -34,12 +34,6 @@ export default defineConfig({
           { text: 'Api Reference', link: '/reference/' },
         ]
       },
-      {
-        text: 'Example',
-        items: [
-          { text: 'Form', link: '/example/form' },
-        ]
-      }
     ],
 
     socialLinks: [
