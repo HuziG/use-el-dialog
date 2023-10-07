@@ -2,7 +2,7 @@
   <img src="./logo.webp" alt="use-el-dialog logo"/>
 </p>
 
-<h1 align="use-el-dialog">Floating Vue</h1>
+<h1 align="center">use-el-dialog</h1>
 
 <p align="center">
   <!-- <a href="https://www.npmjs.com/package/use-el-dialog"><img src="https://img.shields.io/badge/vue-3-brightgreen.svg"/> -->
