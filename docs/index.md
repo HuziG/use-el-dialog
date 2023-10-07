@@ -2,11 +2,11 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
-title: Use-El-Dialog
+title: use-el-dialog
 titleTemplate: easy and simple to use el-dialog by hook type
 
 hero:
-  name: "Use-El-Dialog"
+  name: "use-el-dialog"
   text: "a hook for el-dialog"
   tagline: easy and simple to use el-dialog by hook type
   actions:

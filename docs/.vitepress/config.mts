@@ -3,7 +3,7 @@ import { resolve } from 'path'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Use-El-Dialog",
+  title: "use-el-dialog",
   description: "use <el-dialog> by hook type",
   vite: {
     resolve: {
