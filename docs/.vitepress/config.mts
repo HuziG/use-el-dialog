@@ -44,7 +44,7 @@ export default defineConfig({
     ],
 
     footer: {
-			message: 'Released under the MIT License. thanks for naive-ui-admin.',
+			message: 'Released under the MIT License. from naive-ui-admin.',
 		},
   }
 })
