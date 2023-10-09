@@ -2,11 +2,7 @@ import { ref, unref, getCurrentInstance, watch } from 'vue';
 import { ModalMethods, UseModalReturnType } from '../type';
 import { NewDialogProps, Nullable } from '../type'
 
-type PartialProps = {
-  [key in keyof NewDialogProps]?: any;
-};
-
-export function useElDialog(props: PartialProps): UseModalReturnType {
+export function useElDialog(props: Partial<NewDialogProps>): UseModalReturnType {
   const modalRef = ref<Nullable<ModalMethods>>(null);
   const currentInstance = getCurrentInstance();
 

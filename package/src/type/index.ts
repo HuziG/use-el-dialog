@@ -7,7 +7,7 @@ export type Nullable<T> = T | null;
  * @description: 弹窗对外暴露的方法
  */
 export interface ModalMethods {
-  setProps: (props: NewDialogProps) => void;
+  setProps: (props: Partial<NewDialogProps>) => void;
   openModal: () => void;
   closeModal: () => void;
   setSubLoading: (status: boolean) => void;
@@ -22,10 +22,12 @@ export type RegisterFn = (ModalInstance: ModalMethods) => void;
 
 export type UseModalReturnType = [RegisterFn, ModalMethods];
 
-export type NewDialogProps = DialogProps & {
-  subBtuText?: string;
-  cancelBtuText?: string;
-  width?: number;
-  title?: string;
-  reload?: boolean;
+type CustomDialogProps = {
+  subBtuText: string;
+  cancelBtuText: string;
+  width: number;
+  title: string;
+  reload: boolean;
 }
+
+export type NewDialogProps = DialogProps & CustomDialogProps;

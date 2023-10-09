@@ -1,6 +1,6 @@
 // filename: packages/index.ts
 import Dialog from './src'
-import { useElDialog } from './src/hooks/useElDialog'
+export { useElDialog } from './src/hooks/useElDialog'
 
 const components = [Dialog]
 
@@ -10,10 +10,6 @@ const install = function (Vue: any) {
   components.forEach(component => {
     Vue.component(component.name, component)
   })
-}
-
-export {
-  useElDialog
 }
 
 export default {
