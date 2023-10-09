@@ -1,5 +1,6 @@
 // import type { DialogOptions } from 'naive-ui/lib/dialog';
 import type { DialogProps } from 'element-plus';
+export { basicProps } from './props';
 
 export type Nullable<T> = T | null;
 

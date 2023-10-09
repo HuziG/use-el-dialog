@@ -28,9 +28,8 @@
 
 <script lang="ts" setup>
   import { getCurrentInstance, ref, unref, computed, useAttrs } from 'vue';
-  import { basicProps } from './type/props';
-  import { deepMerge } from './utils';
-  import { NewDialogProps, ModalMethods } from './type';
+  import { deepMerge } from '../utils';
+  import { NewDialogProps, basicProps, ModalMethods } from '../type';
 
   const attrs = useAttrs();
   const props = defineProps({ ...basicProps });
