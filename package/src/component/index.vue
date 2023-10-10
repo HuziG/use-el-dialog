@@ -3,7 +3,7 @@ import Dialog from './dialog.vue'
 
 const Component = ({
   ...Dialog,
-  name: 'BasicDialog',
+  name: 'BasicElDialog',
 }) as unknown as typeof Dialog
 
 export default Component

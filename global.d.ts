@@ -1,9 +1,9 @@
 // env.d.ts
-import BasicDialog from './package/src/dialog.vue';
+import BasicElDialog from './package/src/dialog.vue';
 
 declare module 'vue' {
   export interface GlobalComponents {
-    BasicDialog: typeof BasicDialog;
+    BasicElDialog: typeof BasicElDialog;
   }
 }
 
