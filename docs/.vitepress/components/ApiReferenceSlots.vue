@@ -2,7 +2,7 @@
   <div class="box-container">
     <el-button size="large" @click="handleOpen">openModal</el-button>
 
-    <basic-dialog @register="registerDialog" @on-ok="onOk">
+    <basic-el-dialog @register="registerDialog" @on-ok="onOk">
       <template #header>
         this is header slot
       </template>
@@ -12,7 +12,7 @@
       <template #footer>
         this is footer slot
       </template>
-    </basic-dialog>
+    </basic-el-dialog>
   </div>
 </template>
 

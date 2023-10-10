@@ -27,9 +27,9 @@ pnpm add use-el-dialog
 Install the plugin into Vue:
 
 ```javascript
-import BasicDialog from 'use-el-dialog'
+import BasicElDialog from 'use-el-dialog'
 
-app.use(BasicDialog)
+app.use(BasicElDialog)
 ```
 
 ::: tip

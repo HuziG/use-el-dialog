@@ -84,7 +84,7 @@ when the dialog close trigger
   <div class="box-container">
     <el-button size="large" @click="handleOpen">Callback</el-button>
 
-    <basic-dialog 
+    <basic-el-dialog 
       @register="registerDialog" 
       @on-ok="onOk" 
       @on-close="onClose" 
@@ -135,9 +135,9 @@ decide the child component mounted
   <div class="box-container">
     <el-button size="large" @click="handleOpen">openModal</el-button>
 
-    <basic-dialog @register="registerDialog" @on-ok="onOk">
+    <basic-el-dialog @register="registerDialog" @on-ok="onOk">
       <ReloadCmp />
-    </basic-dialog>
+    </basic-el-dialog>
   </div>
 </template>
 
@@ -200,7 +200,7 @@ footer content slot
   <div class="box-container">
     <el-button size="large" @click="handleOpen">openModal</el-button>
 
-    <basic-dialog @register="registerDialog" @on-ok="onOk">
+    <basic-el-dialog @register="registerDialog" @on-ok="onOk">
       <template #header>
         this is header slot
       </template>
@@ -210,7 +210,7 @@ footer content slot
       <template #footer>
         this is footer slot
       </template>
-    </basic-dialog>
+    </basic-el-dialog>
   </div>
 </template>
 

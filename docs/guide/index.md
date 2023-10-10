@@ -38,9 +38,9 @@ The above is just one way to reference element plus, you can import element plus
 3. Add the plugin into your app:
 
 ```js
-import BasicDialog from 'use-el-dialog'
+import BasicElDialog from 'use-el-dialog'
 
-app.use(BasicDialog)
+app.use(BasicElDialog)
 ```
 
 4. Use the `use-el-dialog` directive:
@@ -50,7 +50,7 @@ app.use(BasicDialog)
   <div class="box-container">
     <el-button size="large" @click="handleOpen">Open Dialog</el-button>
 
-    <basic-dialog @register="registerDialog" />
+    <basic-el-dialog @register="registerDialog" />
   </div>
 </template>
 

@@ -2,9 +2,9 @@
   <div class="box-container">
     <el-button size="large" @click="handleOpen">openModal</el-button>
 
-    <basic-dialog @register="registerDialog" @on-ok="onOk">
+    <basic-el-dialog @register="registerDialog" @on-ok="onOk">
       <ReloadCmp />
-    </basic-dialog>
+    </basic-el-dialog>
   </div>
 </template>
 

@@ -3,7 +3,7 @@ import 'element-plus/dist/index.css'
 import './public.css'
 
 import { ElButton, ElDialog } from 'element-plus'
-import BasicDialog from 'use-el-dialog'
+import BasicElDialog from 'use-el-dialog'
 
 import { useComponents } from './useComponents'
 
@@ -14,6 +14,6 @@ export default {
 
     app.use(ElButton)
     app.use(ElDialog)
-    app.use(BasicDialog)
+    app.use(BasicElDialog)
   },
 }

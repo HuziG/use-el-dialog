@@ -11,7 +11,7 @@
 
     <el-button size="large" @click="handleSetProps">setProps</el-button>
 
-    <basic-dialog @register="registerDialog" />
+    <basic-el-dialog @register="registerDialog" />
   </div>
 </template>
 

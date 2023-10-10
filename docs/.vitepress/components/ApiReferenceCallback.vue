@@ -2,7 +2,7 @@
   <div class="box-container">
     <el-button size="large" @click="handleOpen">Callback</el-button>
 
-    <basic-dialog 
+    <basic-el-dialog 
       @register="registerDialog" 
       @on-ok="onOk" 
       @on-close="onClose" 

@@ -2,7 +2,7 @@
   <div class="box-container">
     <el-button size="large" @click="handleOpen">Open Dialog</el-button>
 
-    <basic-dialog @register="registerDialog" />
+    <basic-el-dialog @register="registerDialog" />
   </div>
 </template>
 
