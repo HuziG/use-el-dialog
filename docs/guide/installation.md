@@ -19,7 +19,7 @@ yarn add use-el-dialog
 ```
 
 ```bash [pnpm]
-pnpm add use-el-dialog
+pnpm install use-el-dialog
 ```
 
 :::
