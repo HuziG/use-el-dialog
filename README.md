@@ -17,6 +17,10 @@ use el-dialog by hook type through <a href="https://github.com/HuziG/use-el-dial
   <a href="https://use-el-dialog.vercel.app/"><b>📚️ Documentation</b></a>
 </p>
 
+<p align="center">
+<a href="https://stackblitz.com/edit/vitejs-vite-v5aovr?file=src%2Fcomponents%2FHelloWorld.vue"><img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" alt=""></a>
+</p>
+
 This package is provide a hook type to use [el-dialog](https://element-plus.org/en-US/component/dialog.html#dialog) component. Before use this package, you should install [element-plus](https://element-plus.org/en-US/component/installation) first. Look out! Your Vue version should be 3.x.
 
 | use-el-dialog | element plus | Vue compatibility |
