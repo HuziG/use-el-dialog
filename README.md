@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./logo.webp" alt="use-el-dialog logo"/>
+  <img src="./logo.png" alt="use-el-dialog logo"/>
 </p>
 
 <h1 align="center">use-el-dialog</h1>
