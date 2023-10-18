@@ -1,5 +1,5 @@
 // env.d.ts
-import BasicElDialog from './package/src/dialog.vue';
+import BasicElDialog from './package/src/component/dialog.vue';
 
 declare module 'vue' {
   export interface GlobalComponents {
