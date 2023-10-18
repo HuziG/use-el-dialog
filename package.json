@@ -1,6 +1,6 @@
 {
   "name": "use-el-dialog",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "description": "use el dialog by hook mode",
   "main": "dist/use-el-dialog.umd.js",
   "module": "dist/use-el-dialog.mjs",
