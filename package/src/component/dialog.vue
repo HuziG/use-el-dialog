@@ -30,9 +30,10 @@
   import { getCurrentInstance, ref, unref, computed, useAttrs } from 'vue';
   import { deepMerge } from '../utils';
   import { NewDialogProps, basicProps, ModalMethods } from '../type';
+  import ComponentInstance from '../../index'
 
   const attrs = useAttrs();
-  const props = defineProps({ ...basicProps });
+  const props = defineProps<NewDialogProps>();
   const emit = defineEmits<{
     (e: 'on-close'): void;
     (e: 'on-ok'): void;
@@ -72,6 +73,7 @@
       ...attrs,
       ...unref(getProps),
       ...unref(propsRef),
+      ...ComponentInstance.options
     };
   });
 
