@@ -33,7 +33,12 @@
   import ComponentInstance from '../../index'
 
   const attrs = useAttrs();
-  const props = defineProps<NewDialogProps>();
+
+  const defaultProps = {
+    ...basicProps,
+    ...ComponentInstance.options
+  };
+
   const emit = defineEmits<{
     (e: 'on-close'): void;
     (e: 'on-ok'): void;
@@ -46,22 +51,22 @@
   const subLoading = ref(false);
 
   const getProps = computed(() => {
-    return { ...props, ...(unref(propsRef) as any) };
+    return { ...defaultProps, ...(unref(propsRef) as any) };
   });
 
   const subBtuText = computed(() => {
     const { subBtuText } = propsRef.value as any;
-    return subBtuText || props.subBtuText;
+    return subBtuText || defaultProps.subBtuText;
   });
 
   const cancelBtuText = computed(() => { 
     const { cancelBtuText } = propsRef.value as any;
-    return cancelBtuText || props.cancelBtuText;
+    return cancelBtuText || defaultProps.cancelBtuText;
   })
 
   const reload = computed(() => {
     const { reload } = propsRef.value as any;
-    return reload || props.reload;
+    return reload || defaultProps.reload;
   });
 
   async function setProps(modalProps: Partial<NewDialogProps>): Promise<void> {
@@ -73,7 +78,6 @@
       ...attrs,
       ...unref(getProps),
       ...unref(propsRef),
-      ...ComponentInstance.options
     };
   });
 
