@@ -10683,7 +10683,6 @@ export {
   customRef,
   toRefs,
   toRef,
-  computed,
   warn2 as warn,
   assertNumber,
   callWithErrorHandling,
@@ -10772,7 +10771,7 @@ export {
   getCurrentInstance,
   registerRuntimeCompiler,
   isRuntimeOnly,
-  computed2,
+  computed2 as computed,
   h,
   ssrContextKey,
   useSSRContext,
@@ -10805,4 +10804,4 @@ export {
   initDirectivesForSSR,
   compile2 as compile
 };
-//# sourceMappingURL=chunk-2ASVSEEA.js.map
+//# sourceMappingURL=chunk-UFJ4CQKT.js.map
