@@ -1,26 +1,11 @@
 import { dialogProps } from 'element-plus';
+import { NewDialogProps } from './index';
 
-export const basicProps = {
-  ...dialogProps,
+export const basicProps: Partial<NewDialogProps> = {
   // 确认按钮文字
-  subBtuText: {
-    type: String,
-    default: 'Confirm',
-  },
-  cancelBtuText: {
-    type: String,
-    default: 'Cancel',
-  },
-  width: {
-    type: Number,
-    default: 446,
-  },
-  title: {
-    type: String,
-    default: '',
-  },
-  reload: {
-    type: Boolean,
-    default: false
-  }
+  subBtuText: 'Confirm',
+  cancelBtuText: 'Cancel',
+  width: 446,
+  title: '',
+  reload: false
 };
