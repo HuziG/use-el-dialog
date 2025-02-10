@@ -26,3 +26,16 @@ This package is provide a hook type to use [el-dialog](https://element-plus.org/
 | use-el-dialog | element plus | Vue compatibility |
 | ------------ | ------- | ----------------- |
 | 1.x          | 1.x  | 3.x               |
+
+
+## 🌏  Open in other Cloud IDEs
+
+Click any of the buttons below to start a new development environment to demo or contribute to the codebase without having to install anything on your machine:
+
+[![Open in VS Code](https://img.shields.io/badge/Open%20in-VS%20Code-blue?logo=visualstudiocode)](https://vscode.dev/github/HuziG/use-el-dialog)
+[![Open in Glitch](https://img.shields.io/badge/Open%20in-Glitch-blue?logo=glitch)](https://glitch.com/edit/#!/import/github/HuziG/use-el-dialog)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/HuziG/use-el-dialog)
+[![Edit in Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/HuziG/use-el-dialog)
+[![Open in Repl.it](https://replit.com/badge/github/withastro/astro)](https://replit.com/github/HuziG/use-el-dialog)
+[![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/HuziG/use-el-dialog)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/HuziG/use-el-dialog)
